@@ -39,14 +39,14 @@
 #If N out terminal
 #If Y continue to ask again
 
-student={}
-num=int(input('Number of students you wanna add '))
-for i in range(1,num+1):
-     name=input('name: ')
-     weight=input('What is ur w')
-     student[name]=weight
-ask='Y'
-while(ask=='Y'):
-     name=input('Which student do u want to see weight? ')
-     print(student[name])
-     ask=input('Do u want to continue using chat Box(Y or N)? ')
+# student={}
+# num=int(input('Number of students you wanna add '))
+# for i in range(1,num+1):
+#      name=input('name: ')
+#      weight=input('What is ur w')
+#      student[name]=weight
+# ask='Y'
+# while(ask=='Y'):
+#      name=input('Which student do u want to see weight? ')
+#      print(student[name])
+#      ask=input('Do u want to continue using chat Box(Y or N)? ')
