@@ -1,10 +1,11 @@
 #Exercise 1: Use input to ask a number. 
 #Create a dictionary named square_numbers with key is from 1 to number and value is square of its key
-num=int(input('Enter ur number: '))
-square_number={}
-for i in range(1,num+1):
-     square_number[i]=i**2
-print(len(square_number))
+# num=int(input('Enter ur number: '))
+# square_number={}
+# for i in range(1,num+1):
+#      square_number[i]=i**2
+# print(len(square_number))
+
 # #Exercise 2: Print average of all value in square_numbers
 # sum=0
 # for key in square_number:
@@ -41,5 +42,11 @@ print(len(square_number))
 student={}
 num=int(input('Number of students you wanna add '))
 for i in range(1,num+1):
-name=input('name: ')
-weight=input('What is ur w')
+     name=input('name: ')
+     weight=input('What is ur w')
+     student[name]=weight
+ask='Y'
+while(ask=='Y'):
+     name=input('Which student do u want to see weight? ')
+     print(student[name])
+     ask=input('Do u want to continue using chat Box(Y or N)? ')
