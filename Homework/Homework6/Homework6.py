@@ -32,10 +32,10 @@ while(ask=='Y'):
     option=int(input("What is ur option? "))
     if option==1:
         for x in manage_subjects:
-                list=[]
+                list=''
                 if manage_subjects[x]< 5:
-                    list.append(manage_subjects[x])
-        print('Here is a list of your weak subject {0}'.format(list))
+                    list+=x
+        print('Here is a list of your weak subject: {0}'.format(list))
     elif option==2:
             sum=0
             for x in manage_subjects:
