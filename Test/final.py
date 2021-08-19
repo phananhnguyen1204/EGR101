@@ -41,11 +41,4 @@
 #     return False
 # print(mysterious_function(5,[1,2,3,]))
 
-# #12:
-def mysterious_function(numbers):
-    dic={}
-    for number in numbers:
-        dic[number]=0
-        dic[number]+=1
-    return dic
-print(mysterious_function([1,2,3,4,2,5,6,7]))
+
