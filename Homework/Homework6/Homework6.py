@@ -31,10 +31,11 @@ ask='Y'
 while(ask=='Y'):
     option=int(input("What is ur option? "))
     if option==1:
+        list=[]
         for x in manage_subjects:
-                list=''
+                
                 if manage_subjects[x]< 5:
-                    list+=x
+                    list.append(x)
         print('Here is a list of your weak subject: {0}'.format(list))
     elif option==2:
             sum=0
@@ -43,11 +44,13 @@ while(ask=='Y'):
             average=(sum)/numb
             print('Here is ur average score {0}'.format(average))
     elif option==3:
-            name=input()
-            score=int(input())
+            name=input('Add your new subject: ')
+            score=int(input('Add your score: '))
             manage_subjects[name]=score
             numb+=1
+            print(manage_subjects)
     print("Do u want to continue using chat box?(Y/N) ")
     ask=input()
+    ask=ask.upper()
 
 
